@@ -3,3 +3,9 @@ server:
   port: 8082
   servlet:
     context-path: /mytest
+
+#自定义key=value
+school:
+  name: 动力节点
+  website: www.bjpowernode.com
+  address: 北京的大兴区
