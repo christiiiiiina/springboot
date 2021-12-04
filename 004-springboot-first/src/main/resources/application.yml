@@ -5,6 +5,10 @@ spring:
     view:
       prefix: /
       suffix: .jsp
+#    启用支持put，delete请求
+    hiddenmethod:
+      filter:
+        enabled: true
 
 server:
   servlet:
