@@ -3,3 +3,27 @@ server:
   port: 8083
   servlet:
     context-path: /myprod
+
+#自定义key=value
+school:
+  name: 动力节点
+  website: www.bjpowernode.com
+  address: 北京的大兴区
+
+spring:
+  #  连接mysql数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/learnsql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: admin
+  #  使用redis（host，ip，password）
+  redis:
+    host: localhost
+    port: 6379
+#    password: 123
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

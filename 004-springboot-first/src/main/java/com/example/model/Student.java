@@ -1,6 +1,13 @@
 package com.example.model;
 
-public class Student {
+import java.io.Serializable;
+
+/**
+ * @author Administrator
+ */
+public class Student implements Serializable {
+    private static final long serialVersionUID = 3941539077791951521L;
+
     private Integer id;
 
     private String name;
@@ -29,5 +36,14 @@ public class Student {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
